@@ -1,18 +1,15 @@
 import java.util.Scanner;
 
-public class ReverseNumber {
+public class MultiplicationTable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter any number: ");
         int number = sc.nextInt();
 
-        // Reverse the number using a loop
-        int digit = 0;
-        while(number > 0) {
-            digit = number % 10;
-            System.out.print(digit);
-            number /= 10;
+        // Looping from 1 to 10 to print the multiplication
+        for(int i = 1; i <= 10; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
         }
 
         sc.close();
