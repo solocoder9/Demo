@@ -23,6 +23,17 @@ public class Pattern4 {
 
         for(int i = 1; i <= 2*n-1; i++) {
             
+            //IF i is less than or equal to n, it prints i stars
+            // Otherwise, it prints (2 * n - i) stars
+            int stars = i <= n ? i : n * 2 - i;
+
+            for(int j = 1; j <= stars; j++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
         }
+
+        sc.close();
     }
 }
