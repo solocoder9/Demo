@@ -5,27 +5,33 @@
       *****
      *******
     *********
+     *******
+      *****
+       ***
+        *
 
  */
 
 import java.util.Scanner;
 
-public class Pattern7 {
+public class Pattern9a {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the value of n: ");
         int n = sc.nextInt();
 
-        for(int i = 1; i <= n; i++) {
-            
-            // Printing spaces
-            for(int j = 1; j <= n-i; j++) {
+        for(int i = 1; i <= 2 * n - 1; i++) {
+
+            // For printing spaces
+            int spaces = i <= n ? n - i : i - n;
+            for(int j = 1; j <= spaces; j++) {
                 System.out.print(" ");
             }
 
-            // Printing stars
-            for(int k = 1; k <= 2 * i - 1; k++) {
+            // For printing stars
+            int stars = i <= n ? 2 * i - 1 : 2 * ( 2 * n - i) -1;
+            for(int k = 1; k <= stars; k++) {
                 System.out.print("*");
             }
 

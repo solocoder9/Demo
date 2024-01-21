@@ -1,24 +1,24 @@
 /*
 
-        *
-       ***
-      *****
-     *******
     *********
+     *******
+      *****
+       ***
+        *
 
  */
 
 import java.util.Scanner;
 
-public class Pattern7 {
+public class Pattern8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the value of n: ");
+        System.out.print("Enter the valud of n: ");
         int n = sc.nextInt();
 
-        for(int i = 1; i <= n; i++) {
-            
+        for(int i = n; i >= 1; i--) {
+
             // Printing spaces
             for(int j = 1; j <= n-i; j++) {
                 System.out.print(" ");
