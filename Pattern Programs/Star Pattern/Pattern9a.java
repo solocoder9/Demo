@@ -21,17 +21,32 @@ public class Pattern9a {
         System.out.print("Enter the value of n: ");
         int n = sc.nextInt();
 
-        for(int i = 1; i <= 2 * n - 1; i++) {
+        // Printing the upper part
+        for(int i = 1; i <= n; i++) {
 
-            // For printing spaces
-            int spaces = i <= n ? n - i : i - n;
-            for(int j = 1; j <= spaces; j++) {
+            // Printing spaces
+            for(int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
 
-            // For printing stars
-            int stars = i <= n ? 2 * i - 1 : 2 * ( 2 * n - i) -1;
-            for(int k = 1; k <= stars; k++) {
+            // Printing stars
+            for(int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+        // Printing the lower part
+        for(int i = n - 1; i >= 1; i--) {
+            
+            // Printing spaces
+            for(int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Printing stars
+            for(int k = 1; k <= 2 * i - 1; k++) {
                 System.out.print("*");
             }
 
