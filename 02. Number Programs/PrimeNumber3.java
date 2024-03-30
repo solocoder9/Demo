@@ -14,7 +14,7 @@ public class PrimeNumber3 {
             return false;
         }
     
-        for (int i = 5; i <= Math.sqrt(n); i += 6) {
+        for (int i = 5; i * i <= n; i += 6) {
             // 6k ± 1, where k is a natural number
             if (n % i == 0 || n % (i + 2) == 0) {
                 return false;
